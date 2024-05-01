@@ -1,8 +1,8 @@
-# blah
+# b
   ![MIT badge ](https://img.shields.io/badge/License-MIT-yellow.svg)
-  by CTD
+  by d
   ## Description
-  blah blah
+  b
   ## Table of Contents
   - [User Story](#user-story)
   - [Acceptance Criteria](#acceptance-criteria)
@@ -12,16 +12,16 @@
 
 
   ## User Story
-  blah blah blah
+  b
   ## Acceptance Criteria
-  womp
+  b
   ## Use
-  this way
+  c
   ## License
 This project is licensened under the MIT license.
   ## Contact Info
-  CTD
-  ctd@email
-  cduff
+  d
+  d
+  e
 
   

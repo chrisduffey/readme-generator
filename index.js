@@ -1,7 +1,9 @@
 // TODO: Include packages needed for this application
+// file system
 const fs = require ('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./develop/utils/generateMarkdown');
+const validate = (value) => {if(value){return true}else {return 'Please enter a value.'}} 
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -9,13 +11,14 @@ const questions = [
         type: "input",
         message: "Whats your title?",
         name: "title",
-        // checks to see if input is made
-        // check: (value) =>{if(value){return true}else {return 'Please enter a title.'}} ,
+        validate: (value)=>validate(value),
+        
     },
     {
         type: "input",
-        message: "What is your Task?",
+        message: "Provide a Description?",
         name:"task",
+        validate: (value)=>validate(value),
         
 
     },
@@ -23,6 +26,7 @@ const questions = [
         type: "input",
         message: "What is your User Story?",
         name:"story",
+        validate: (value)=>validate(value),
         
 
     },
@@ -30,6 +34,7 @@ const questions = [
         type: "input",
         message: "What is your Acceptance Criteria?",
         name:"criteria",
+        validate: (value)=>validate(value),
         
 
     },
@@ -37,6 +42,7 @@ const questions = [
         type: "input",
         message: "How do you use your application?",
         name:"use",
+        validate: (value)=>validate(value),
         
 
     },
@@ -44,25 +50,30 @@ const questions = [
         type: "input",
         message: "Whats your name?",
         name:"name",
+        validate: (value)=>validate(value),
     },
     {
         type: "input",
         message: "Whats your email?",
         name: "email",
+        validate: (value)=>validate(value),
     },
     {
         type: "input",
         message: "What is your Github?",
         name: "git",
+        validate: (value)=>validate(value),
     },
     {
-        type: "checkbox",
+        type: "list",
         message: "Please select license if used.",
+        name: "license",
         choices: [
-            "MIT License",
-            "General Pub License",
-            "Mozilla Pub License",
-            "Unlicense",
+            "MIT",
+            "Apache",
+            "Mozilla",
+            "IBM",
+            "None",
         ],
     }
 
@@ -83,10 +94,10 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer
-    .createPromptModule(questions)
+    .prompt(questions)
     .then((answers)=> {
         const readmeContent = generateMarkdown(answers);
-        writeToFile('README.md', readmeContent);
+        writeToFile('dist/README.md', readmeContent);
     })
     .catch((error)=> {
         console.error(error);
