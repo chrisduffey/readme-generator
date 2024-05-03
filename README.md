@@ -1,27 +1,33 @@
-# blah
-  ![MIT badge ](https://img.shields.io/badge/License-MIT-yellow.svg)
-  by CTD
+# README GENERATOR
+  
   ## Description
-  blah blah
-  ## Table of Contents
-  - [User Story](#user-story)
-  - [Acceptance Criteria](#acceptance-criteria)
-  - [Use](#use)
-  - [License](#license)
-  - [Contact Info](#contact-info)
-
+   A command line application that will create and populate a readme file.
+  
 
   ## User Story
-  blah blah blah
+  * As a developer
+  * I want an application to create my readme files
+  * So that I dont have to create the file myself each time
   ## Acceptance Criteria
-  womp
+  * Given when I finish a project
+  * When I want to make a README.md file
+  * Then I can use a command line prompt to generate it
+  * When I fill in the question prompts
+  * Then it will take my data and populate the .md file
+  * When I do future projects
+  *Then I will not have to make the README.md file ever again
   ## Use
-  this way
+  * Google link to video application:
+  * https://drive.google.com/file/d/1JqeHiMHJFx38t2rNJgn-bn9OcmnPqH3c/view
+  
+  * Repository link:
+  * https://github.com/chrisduffey/readme-generator
+
   ## License
-This project is licensened under the MIT license.
+* None
   ## Contact Info
-  CTD
-  ctd@email
-  cduff
+  Chris Duffey
+  duffeyvt12@gmail.com
+  chrisduffey
 
   

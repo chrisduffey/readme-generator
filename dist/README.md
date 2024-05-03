@@ -1,8 +1,8 @@
-# b
+# README Generator
   ![MIT badge ](https://img.shields.io/badge/License-MIT-yellow.svg)
-  by d
+  by Chris Duffey
   ## Description
-  b
+  Make a command line app that will created a readme file
   ## Table of Contents
   - [User Story](#user-story)
   - [Acceptance Criteria](#acceptance-criteria)
@@ -12,16 +12,16 @@
 
 
   ## User Story
-  b
+  Insert story here
   ## Acceptance Criteria
-  b
+  Inster Accept Criteria here
   ## Use
-  c
+  Just as you see it now
   ## License
 This project is licensened under the MIT license.
   ## Contact Info
-  d
-  d
-  e
+  Chris Duffey
+  duffeyvt12@gmail.com
+  chrisduffey
 
   
